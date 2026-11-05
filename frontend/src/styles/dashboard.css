@@ -1,0 +1,246 @@
+
+.dashboard-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  color: #172033;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.dashboard-header {
+  height: 78px;
+  padding: 0 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  border-bottom: 1px solid #e8edf5;
+}
+
+.dashboard-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #2563eb;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.dashboard-logout {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 19px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #334155;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dashboard-logout:hover {
+  background: #f1f5f9;
+}
+
+.dashboard-logout:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.dashboard-main {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 65px 25px 35px;
+}
+
+.dashboard-welcome {
+  margin-bottom: 36px;
+}
+
+.dashboard-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #15803d;
+  background: #dcfce7;
+  padding: 8px 13px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.dashboard-welcome h1 {
+  font-size: clamp(28px, 4vw, 40px);
+  margin: 18px 0 10px;
+  letter-spacing: -1px;
+}
+
+.dashboard-welcome p {
+  color: #64748b;
+  line-height: 1.7;
+  max-width: 650px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 24px;
+}
+
+.dashboard-card {
+  background: #ffffff;
+  border: 1px solid #e8edf5;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 10px 35px rgba(15, 23, 42, 0.04);
+}
+
+.dashboard-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: #2563eb;
+  margin-bottom: 28px;
+}
+
+.dashboard-card-heading h2 {
+  margin: 0;
+  color: #172033;
+  font-size: 19px;
+}
+
+.dashboard-detail {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.dashboard-detail:last-child {
+  border-bottom: none;
+}
+
+.dashboard-detail-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eff6ff;
+  color: #2563eb;
+  border-radius: 12px;
+}
+
+.dashboard-detail span {
+  display: block;
+  color: #64748b;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.dashboard-detail strong {
+  display: block;
+  font-size: 15px;
+  overflow-wrap: anywhere;
+}
+
+.dashboard-security {
+  text-align: center;
+  padding: 15px 5px;
+}
+
+.dashboard-security-icon {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  border-radius: 25px;
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.dashboard-security h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.dashboard-security p {
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.dashboard-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 15px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background: #dcfce7;
+  color: #15803d;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.dashboard-error {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 14px;
+  border-radius: 10px;
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.dashboard-loading {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: #2563eb;
+}
+
+.dashboard-spinner {
+  animation: dashboard-spin 1s linear infinite;
+}
+
+@keyframes dashboard-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.dashboard-footer {
+  text-align: center;
+  margin-top: 60px;
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .dashboard-header {
+    padding: 0 20px;
+  }
+
+  .dashboard-main {
+    padding-top: 35px;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-card {
+    padding: 22px;
+  }
+
+  .dashboard-brand {
+    font-size: 19px;
+  }
+}
