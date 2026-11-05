@@ -152,3 +152,33 @@ Sanju Maji
 ## License
 
 Created for educational and internship demonstration purposes.
+
+---
+
+## Application Screenshots
+
+### Login Page
+
+![SecureAuth Login Page](screenshots/login.png)
+
+### Registration Page
+
+![SecureAuth Registration Page](screenshots/register.png)
+
+### Protected Dashboard
+
+![SecureAuth Dashboard](screenshots/dashboard.png)
+
+---
+
+## Project Information
+
+**Project:** SecureAuth — Full-Stack Authentication System
+
+**Internship:** Prodigy InfoTech
+
+**Task:** PRODIGY_FS_01
+
+**Technology Stack:** React.js, Node.js, Express.js, MongoDB, JWT Authentication
+
+**Features:** User Registration, Secure Login, Password Hashing, Protected Dashboard, Session Authentication, and Logout.
